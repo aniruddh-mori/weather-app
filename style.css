@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: #87ceeb;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+form {
+    height: auto;
+    background-color: white;
+    width: 250px;
+    padding: 2rem;
+}
+
+input {
+    margin-top: 1rem;
+    width: 100%;
+    outline: none;
+    padding: 0.5rem;
+}
+
+#btn {
+    padding: 0.5rem;
+    background-color: rgba(128, 128, 128, 0.537);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: none;
+}
+
+#btn:hover {
+    cursor: pointer;
+}
+
+#name {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
