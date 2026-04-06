@@ -1,17 +1,19 @@
 body {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
     font-size: 1.4rem;
     background-color: #62bbcb5c;
     font-family: "roboto", "sans-serif";
+    padding:1rem ;
 }
 
 form {
     background-color: #87ceeb;
+    width: 90%;
+    max-width: 400px;
     min-height: 50vh;
-    min-width: 35vh;
     padding: 2rem;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     transition: all 0.4s ease;
@@ -29,10 +31,10 @@ input {
 
 #btn {
     padding: 0.5rem;
+    max-width: 100% ;
+    margin: 1rem;
     background-color: rgba(128, 128, 128, 0.537);
     color: rgb(0, 0, 0);
-    border-radius: 10px;
-    border: none;
     border: 2px solid rgb(148, 197, 204);
     border-radius: 1rem;
     font-size: 1rem;
@@ -41,6 +43,7 @@ input {
 
 .info {
     letter-spacing: 1.3px;
+    margin-left: 2rem;
 }
 
 #name {
@@ -73,4 +76,15 @@ form:hover {
 input:focus {
     border-color: #0077b6;
     outline: none;
+}
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+    #name {
+        padding: 1.5rem;
+    }
+    form {
+        padding: 1.5rem;
+    }
 }
