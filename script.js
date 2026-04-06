@@ -32,25 +32,25 @@ const fetchURL = async function () {
     document.querySelector("#name").innerText =
       data.location.name + " , " + data.location.country;
 
+    // Add Condition ...
+    document.querySelector("#cdn").innerText =
+      "Condition : " + data.current.condition.text;
+
     // Add Temparature ...
     document.querySelector("#temp").innerText =
-      "Temparature: " + data.current.temp_c + " °C";
+      "Temparature : " + data.current.temp_c + " °C";
 
     // Add region ...
     document.querySelector("#region").innerText =
-      "Region: " + data.location.region;
+      "Region : " + data.location.region;
 
     // Add Humidity(dew) ...
     document.querySelector("#humidity").innerText =
-      "Humidity: " + data.current.humidity + "%";
-
-    // Add Condition ...
-    document.querySelector("#cdn").innerText =
-      "Condition: " + data.current.condition.text;
+      "Humidity : " + data.current.humidity + "%";
 
     // Add Wind in kph ...
     document.querySelector("#wind").innerText =
-      "Wind: " + data.current.wind_kph + " Km/h";
+      "Wind : " + data.current.wind_kph + " Km/h";
   } catch (e) {
     alert("City not Found X");
     document.querySelector("#icon").style.display = "none";

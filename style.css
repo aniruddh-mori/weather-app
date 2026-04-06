@@ -2,16 +2,19 @@ body {
     display: flex;
     justify-content: center;
     height: 100vh;
-    background-color: #87ceeb;
     align-items: center;
     font-size: 1.4rem;
+    background-color: #62bbcb5c;
+    font-family: "roboto", "sans-serif";
 }
 
 form {
-    height: auto;
-    background-color: white;
-    width: 250px;
+    background-color: #87ceeb;
+    min-height: 50vh;
+    min-width: 35vh;
     padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
 }
 
 input {
@@ -19,6 +22,9 @@ input {
     width: 100%;
     outline: none;
     padding: 0.5rem;
+    font-size: 1.2rem;
+    border: 2px solid rgb(148, 197, 204);
+    border-radius: 0.5rem;
 }
 
 #btn {
@@ -27,10 +33,14 @@ input {
     color: rgb(0, 0, 0);
     border-radius: 10px;
     border: none;
+    border: 2px solid rgb(148, 197, 204);
+    border-radius: 1rem;
+    font-size: 1rem;
+    transition: all 0 .3s ease-in-out;
 }
 
-#btn:hover {
-    cursor: pointer;
+.info {
+    letter-spacing: 1.3px;
 }
 
 #name {
@@ -43,4 +53,24 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+h2:hover {
+    transform: rotate(1deg) scale(1.02);
+
+}
+
+#btn:hover {
+    cursor: pointer;
+    background: #023e8a;
+    transform: scale(1.05);
+}
+
+form:hover {
+    transform: translateY(-5px)
+}
+
+input:focus {
+    border-color: #0077b6;
+    outline: none;
 }
